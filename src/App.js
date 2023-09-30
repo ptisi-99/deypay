@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+import React, { useState,useEffect } from "react";
+import brandlogo from "./brandlogo.png";
+import  Dashboard  from "./mydashboard";
 import './App.css';
 
 function App() {
+
+  const [mainpage, togglemainpage] = useState(true)
+  const [data, resetdata] = useState({})
+
+  useEffect(()=>{
+      fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/global/2023-09-22/2023-09-25?unitGroup=metric&key=ENVYXS52ADF9VAFTBGLAM5YF3&contentType=json")
+      .then((respond)=> {return respond.json()}).then((data)=> { 
+          console.log(data)
+          resetdata(data)
+      
+      }).catch("Failed data fetch")
+
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      
+          mainpage ?
+          (<div className="desktop">
+              <div className="brandlogo-wrapper" >
+                  <img id="brandlogo" src={brandlogo} alt="this is brandlogo" width={200}/>
+                  
+                  <div className="statement" onClick={()=> {togglemainpage(!mainpage)}}>
+                      <h3>Get Started...</h3>
+                      <p>let"s Levitate together!</p>
+                  </div>
+              
+              </div>
+          </div> ) : (
+              
+                  <Dashboard data={data} />
+                  
+             
+              )
+      
+  );   
 }
 
 export default App;
+

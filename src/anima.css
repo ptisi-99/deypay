@@ -1,0 +1,398 @@
+
+
+
+/*
+The CSS export should solely be used as a reference.
+For a more detailed animation export the JSON file should be used.
+*/
+
+* {
+    --left: 70px;
+    --color:rgba(33, 61, 128, 0.6);
+  }
+  
+  
+  .landingtag{
+    position: fixed;
+   
+    background-color: var(--color);
+    border-radius: 10px;
+    border: 3px solid white;
+    bottom: 20px;
+    left: 49px;
+    z-index: 20;
+    padding: 4px 10px;
+    color: white;
+  }
+  
+  .landingtag a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  
+  
+  .dashboard {
+    background-color: #d2e2fa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .dashboard .div {
+    background-color: #d2e2fa;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .dashboard .frame {
+    background-color: #154792;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: #ff9b06;
+    height: 118px;
+    left: -3px;
+    position: absolute;
+    top: -3px;
+    width: 1446px;
+  }
+  
+  .dashboard .text-wrapper {
+    color: #ffffff;
+   
+    font-size: 36px;
+    font-weight: 800;
+    left:32%;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+  }
+  
+  .dashboard .text-wrapper-2 {
+    color: #000000;
+    
+    font-size: 27px;
+    font-weight: bold;
+    left: var(--left);
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 175px;
+  }
+  
+  .dashboard .overlap {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #ff9b06;
+    height: 40px;
+    left: var(--left);
+    position: absolute;
+    top: 222px;
+    width: 514px;
+  }
+  
+  .overlap input{
+    width: 99%;
+    height: 94%;
+    border: none;
+    font-size: 20px;
+    
+  }
+  
+  
+  
+  .dashboard .div-wrapper {
+    align-items: center;
+    background-color: #154792;
+    border: 2px solid;
+    border-color: #ff9b06;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    left: var(--left);
+    padding: 10px 0px;
+    position: absolute;
+    top: 328px;
+    width: 518px;
+  }
+  
+  .dashboard .text-wrapper-3 {
+    color: #ffffff;
+    
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .dashboard .overlap-group {
+    background-color: #c2c1c1;
+    border: 1px solid;
+    border-color: #ff9b06;
+    height: 67px;
+    left: var(--left);
+    position: absolute;
+    top: 511px;
+    width: 518px;
+  }
+  
+  .dashboard .text-wrapper-4 {
+    color:whitesmoke;
+   
+    font-size: 20px;
+    font-weight: 500;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 19px;
+  }
+  
+  .dashboard .text-wrapper-5 {
+    color: #000000;
+   
+    font-size: 32px;
+    font-weight: 500;
+    left: 651px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 550px;
+  }
+  
+  .dashboard .frame-2 {
+    background-color: #154792;
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 4px;
+    height: 200px;
+    left: 651px;
+    position: absolute;
+    top: 183px;
+    width: 570px;
+  }
+  
+  .dashboard .line {
+    height: 1px;
+    left: var(--left);
+    position: absolute;
+    top: 463px;
+    width: 220px;
+    background-color: #ff9b06;
+    
+  }
+  
+  .dashboard .img {
+    height: 1px;
+    left: 360px;
+    position: absolute;
+    top: 463px;
+    width: 220px;
+    background-color: #ff9b06;
+  }
+  
+  .dashboard .text-wrapper-6 {
+    color: #949191;
+    
+    font-size: 24px;
+    font-weight: 600;
+    left: 327px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 445px;
+  }
+  
+  .dashboard .frame-3 {
+    background-color: #949191;
+    border: 2px solid;
+    border-color: #ff9b06;
+    border-radius: 7px;
+    height: 296px;
+    left: 659px;
+    position: absolute;
+    top: 630px;
+    width: 185px;
+  }
+  
+  .dashboard .frame-4 {
+    background-color: #949191;
+    border: 2px solid;
+    border-color: #ff9b06;
+    border-radius: 7px;
+    height: 296px;
+    left: 851px;
+    position: absolute;
+    top: 630px;
+    width: 185px;
+  }
+  
+  .dashboard .frame-5 {
+    background-color: #949191;
+    border: 2px solid;
+    border-color: #ff9b06;
+    border-radius: 7px;
+    height: 296px;
+    left: 1043px;
+    position: absolute;
+    top: 630px;
+    width: 185px;
+  }
+  
+  .dashboard .frame-6 {
+    background-color: #949191;
+    border: 2px solid;
+    border-color: #ff9b06;
+    border-radius: 7px;
+    height: 296px;
+    left: 1235px;
+    position: absolute;
+    top: 630px;
+    width: 185px;
+    overflow: hidden;
+  }
+  
+  
+  /* this is the components styling portion*/
+  
+  .inner {
+  
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    width: 90%;
+    height: 100%;
+  
+  }
+  
+  .inner .frame2contentinner {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -20px;
+    justify-content:space-between;
+    position: relative;
+    width: 134px;
+    height:80%;
+  
+  
+  }
+  
+  .inner .text-wrapperf {
+    color: #ffffff;
+    
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  
+  
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .inner .divf {
+    color: #ffffff;
+   
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+    background-color: transparent;
+  }
+  
+  .inner .vector {
+    height: 39.3px;
+    
+    position: relative;
+    width: 49.88px;
+    z-index: 20;
+  }
+  
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:100px;
+    left:34%;
+    padding: 20px;
+    background-color: #ff9b06;
+    border: 3px solid rgb(189, 124, 3);
+    border-radius: 10px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .customH1{
+    position: absolute;
+    left: 40%;
+    color: blue;
+
+  }
+  .toggler {
+    position: absolute;
+    left: 40%;
+    top:93%;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+  
+    font-size: 17px;
+    width: 300px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .diva {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    margin: 4px;
+  
+  }
+  
+  .diva input {
+    width: 90%;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    color: blue;
+    
+  
+  }
+
+  .myformpage {
+    
+    width:100%;
+    height:100%;
+    background-color: yellowgreen;
+   
+  }
